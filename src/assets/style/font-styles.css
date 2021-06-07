@@ -1,0 +1,87 @@
+@import url("../fonts/JetBrainsMono.css");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "JetBrains Mono";
+  color: rgba(0, 0, 0, 0.6);
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+a {
+  font-family: "JetBrains Mono";
+  color: rgba(0, 0, 5, 0.75);
+  text-decoration: none;
+  text-shadow: 0 0 0.75em rgba(0, 0, 0, 0.6);
+  transition: 500ms;
+}
+
+a:hover {
+  color: black;
+  opacity: 1;
+  text-shadow: 0 0 1.5em rgba(0, 0, 0, 0.6);
+}
+
+em {
+  text-decoration: none;
+  font-style: normal;
+  color: rgba(0, 0, 0, 1);
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dropdownTitle {
+  font-size: 12px;
+  font-weight: 400;
+  text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  transition: all 0.6s ease;
+}
+
+.dropdownTitle:hover {
+  text-shadow: 0 0 1.5em rgba(0, 0, 0, 0.5);
+}
+
+.dropdownTitle::after {
+  content: " +"
+}
+
+.dropdownTitle:clicked::after {
+  content: " o"
+}
+
+.bigmessage {
+  font-size: 10vh;
+}
+
+.personthankeddiv{
+  display: block;
+}
+.personthanked{
+  font-size: 12px;
+  line-height: 1em;
+}
+
+.thankedlinked{
+  text-decoration: underline;
+  text-shadow: none;
+  color: rgba(0, 0, 0, 0.6);
+}

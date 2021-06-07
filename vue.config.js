@@ -1,0 +1,5 @@
+configureWebpack: {
+    module: {
+        exprContextCritical: false
+    }
+}

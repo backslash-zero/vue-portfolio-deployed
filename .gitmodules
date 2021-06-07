@@ -1,0 +1,3 @@
+[submodule "src/script/smoke.js"]
+	path = src/script/smoke.js
+	url = https://github.com/bijection/smoke.js

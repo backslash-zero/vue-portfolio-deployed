@@ -1,0 +1,119 @@
+{
+    "projects": [
+        {
+            "title": "Cubrebocas / Cactus21",
+            "id": 1,
+            "repo": "/src/assets/projects/Cubrebocas-Cactus21",
+            "slug": "Cubrebocas-Cactus21",
+            "description": "The Cubrebocas ('facemask' in Mexican spanish, which translates - litteraly - to 'cover mouth') project aimed to explore our world's perception within the global pandemic context. Cactus21 displays mostly Saguaro Cacti shot in the region of Sonora in northern Mexico.",
+            "thanks": [
+                {
+                    "name": "Domingo Vazquez",
+                    "link": "https://www.instagram.com/mingovazquez91/"
+                },
+                {
+                    "name": "Familia Vazquez"
+                },
+                {
+                    "name": "Karen Alegria",
+                    "link": "https://www.instagram.com/kalegriabh/"
+                }
+            ]
+        },
+        {
+            "title": "Cubrebocas / Desert",
+            "id": 2,
+            "repo": "/src/assets/projects/Cubrebocas-Desert",
+            "slug": "Cubrebocas-Desert",
+            "description": "The Cubrebocas ('facemask' in Mexican spanish, which translates - litteraly - to 'cover mouth') project aimed to explore our world's perception within the global pandemic context.",
+            "thanks": [
+                {
+                    "name": "Domingo Vazquez",
+                    "link": "https://www.instagram.com/mingovazquez91/"
+                },
+                {
+                    "name": "Familia Vazquez"
+                },
+                {
+                    "name": "Karen Alegria",
+                    "link": "https://www.instagram.com/kalegriabh/"
+                }
+            ]
+        },
+        {
+            "title": "Cubrebocas / La Plage",
+            "id": 3,
+            "repo": "/src/assets/projects/Cubrebocas-La-Plage",
+            "slug": "Cubrebocas-La-Plage",
+            "description": "The Cubrebocas ('facemask' in Mexican spanish, which translates - litteraly - to 'cover mouth') project aimed to explore our world's perception within the global pandemic context."
+        },
+        {
+            "title": "Cubrebocas / Layers",
+            "id": 4,
+            "repo": "/src/assets/projects/Layers",
+            "slug": "Cubrebocas-Layers",
+            "description": "The Cubrebocas ('facemask' in Mexican spanish, which translates - litteraly - to 'cover mouth') project aimed to explore our world's perception within the global pandemic context",
+            "thanks": [
+                {
+                    "name": "Ambrose Wilkinson",
+                    "link": "https://anundefinedjourney.com/"
+                },
+                {
+                    "name": "Ulises Gallaviz",
+                    "link": "https://www.instagram.com/ulisescapda/"
+                }
+            ]
+        },
+        {
+            "title": "Cubrebocas / Les Mexicains",
+            "id": 5,
+            "repo": "/src/assets/projects/Cubrebocas-Les-Mexicains",
+            "slug": "Cubrebocas-Les-Mexicains",
+            "description": "The Cubrebocas ('facemask' in Mexican spanish, which translates - litteraly - to 'cover mouth') project aimed to explore our world's perception within the global pandemic context."
+        },
+        {
+            "title": "Cubrebocas / Out There",
+            "id": 6,
+            "repo": "/src/assets/projects/Cubrebocas-Out-There",
+            "slug": "Cubrebocas-Out-There",
+            "description": "The Cubrebocas ('facemask' in Mexican spanish, which translates - litteraly - to 'cover mouth') project aimed to explore our world's perception within the global pandemic context"
+        },
+        {
+            "title": "Lonely City People",
+            "id": 7,
+            "repo": "/src/assets/projects/Lonely-City-People",
+            "slug": "Lonely-City-People",
+            "description": "\"Through the darkness of future past \nThe magician longs to see. \nOne chants out between two worlds \nFire walk with me.\""
+        },
+        {
+            "title": "PrePandemia",
+            "id": 8,
+            "repo": "/src/assets/projects/PrePandemia",
+            "slug": "PrePandemia",
+            "description": "A retrospective look at what preceded the Cubrebocas projet",
+            "thanks": [
+                {
+                    "name": "Thanh Thu",
+                    "link": "https://www.instagram.com/thanhxthu/"
+                }
+            ]
+        },
+        {
+            "title": "Stolen Posters Berlin 2016-2019",
+            "id": 9,
+            "repo": "/src/assets/projects/StolenPostersBerlin",
+            "slug": "StolenPostersBerlin",
+            "description": "These posters were taken - physically - from the streets of Berlin between 2016 and 2019 and archived",
+            "externalLinks": [
+                {
+                    "name": "data",
+                    "url": "https://docs.google.com/spreadsheets/d/1YnbEy91WVGKTtOuVtVFtecqtALmpcJ13olTWhUKyPBM/edit?usp=sharing"
+                },
+                {
+                    "name": "instagram",
+                    "url": "https://www.instagram.com/stolenpostersberlin/"
+                }
+            ]
+        }
+    ]
+}
