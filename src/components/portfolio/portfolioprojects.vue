@@ -59,7 +59,7 @@ export default {
     align-items: flex-start;
     justify-content: center;
     z-index: 1;
-    overflow: scroll;
+    overflow: auto;
 }
 .thumbwrapper
 {

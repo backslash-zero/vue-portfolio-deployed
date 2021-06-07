@@ -190,7 +190,8 @@ export default {
         justify-content: space-evenly;
         flex-flow: row wrap;
         overflow: auto;
-        padding-top: 64px;
+        padding: 24px 0px 24px 0px;
+        box-sizing: border-box;
     }
     .photo-box:after
     {
@@ -274,7 +275,14 @@ export default {
             height: 100%;
             overflow: none;
             justify-content: none;
-            padding-bottom: 120px;
+            box-sizing: border-box;
+            padding-bottom: 40px;
+        }
+        .photo-box:after
+        {
+            display: block;
+            position: static;
+            height: 80px;
         }
         .photo{
             height: auto;

@@ -2,10 +2,10 @@ const sharp = require('sharp');
 const fs = require('fs');
 const mkdirp = require('mkdirp');
 
-var remoteDir = 'https://github.com/backslash-zero/portfolio-assets';
+var remoteDir = '';
 var localDir = './public'
-var thumbnailsDir = '/assets/projects'
-var projectDir = '/assets/thumbnails'
+var projectDir = '/assets/projects'
+var thumbnailsDir = '/assets/thumbnails'
 
 var path = localDir + projectDir
 var pathDeploy = remoteDir + projectDir // remove public slug because folder is being deplyed at root of site
@@ -44,7 +44,7 @@ function createThumbnail(newImage)
         .withMetadata()
         .toFile(location, (err, sharp) => {
             if (err) {
-                console.error(location + ": "+ err);
+                console.error("input:" + localDir + newImage.src + "location: " + location + ": "+ err);
             }
             else {
                 console.log(sharp);

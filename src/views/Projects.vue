@@ -35,7 +35,7 @@ export default {
     .wrapper {
         height: calc(100% - 108px);
         margin-top: 48px;
-        overflow: scroll;
+        overflow: auto;
     }
 }
 
