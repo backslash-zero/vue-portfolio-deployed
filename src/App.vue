@@ -36,6 +36,8 @@ export default {
 @import url("assets/style/transitions.css");
 @import url("assets/style/containers.css");
 @import url("assets/style/cursor.css");
+@import url("assets/style/letters.css");
+@import url("assets/style/preview.css");
 ::selection {
   color: white;
   background-color: red;

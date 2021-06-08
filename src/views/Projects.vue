@@ -1,11 +1,7 @@
 <template>
     <div class="page-wrapper">
         <BackButton />
-        <div class="container portfoliowrapper">
-            <div class="wrapper">
-                <PortfolioProjects :projects="projects"/>
-            </div>
-        </div>
+        <PortfolioProjects :projects="projects"/>
     </div>
 </template>
 
@@ -31,12 +27,13 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 540px){
-    .wrapper {
-        height: calc(100% - 108px);
-        margin-top: 48px;
-        overflow: auto;
-    }
+.wrapper-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
 </style>

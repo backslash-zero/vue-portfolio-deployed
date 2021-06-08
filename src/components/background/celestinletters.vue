@@ -1,74 +1,58 @@
 <template>
 	<div class="bgcontainer">
 		<div class="mainLetterWrapper">
-			<div class="doubleLetterWrapper">
+			<div class="doubleLetterWrapper lettersTop">
 				<div class="pairLetterWrapper">
 					<div class="letter first">
-						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="25%" height="100%"/>
-							<rect width="100%" height="25%"/>
-							<rect y="75%" width="100%" height="25%"/>
-						</svg>
+                     <div class="letter-block hTopFull"></div>
+                     <div class="letter-block vLeftFull"></div>
+                     <div class="letter-block hBottomFull"></div>
 					</div>
 					<div class="letter second">
-						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="25%" height="100%"/>
-							<rect width="100%" height="25%"/>
-							<rect y="37.5%" width="100%" height="25%"/>
-							<rect y="75%" width="100%" height="25%"/>
-						</svg>
+                  <div class="letter-block hTopFull"></div>
+                  <div class="letter-block vLeftFull"></div>
+                  <div class="letter-block hBottomFull"></div>
+                  <div class="letter-block hCenterFull"></div>
 					</div>
 				</div>
 				<div class="pairLetterWrapper">
 					<div class="letter third">
-						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="25%" height="100%"/>
-							<rect y="75%" width="100%" height="25%"/>
-						</svg>
+						<div class="letter-block vLeftFull"></div>
+                  <div class="letter-block hBottomFull"></div>
 					</div>
 					<div class="letter fourth">
-						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="25%" height="100%"/>
-							<rect width="100%" height="25%"/>
-							<rect y="37.5%" width="100%" height="25%"/>
-							<rect y="75%" width="100%" height="25%"/>
-						</svg>
+							<div class="letter-block hTopFull"></div>
+                     <div class="letter-block vLeftFull"></div>
+                     <div class="letter-block hBottomFull"></div>
+                     <div class="letter-block hCenterFull"></div>
 					</div>
 				</div>
 			</div>
-			<div class="doubleLetterWrapper">
+			<div class="doubleLetterWrapper lettersBottom">
 				<div class="pairLetterWrapper">
 					<div class="letter fifth">
-						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect y="75%" width="100%" height="25%"/>
-							<rect y="37.5%" width="100%" height="25%"/>
-							<rect width="100%" height="25%"/>
-							<rect width="25%" height="62.5%"/>
-							<rect x="75%" y="37.5%" width="25%" height="62.5%"/>
-						</svg>
+						<div class="letter-block hTopFull"></div>
+						<div class="letter-block vLeftHalfTop"></div>
+						<div class="letter-block hCenterFull"></div>
+						<div class="letter-block hBottomFull"></div>
+						<div class="letter-block vRightHalfBottom"></div>
 					</div>
 					<div class="letter sixth">
-						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="100%" height="25%"/>
-							<rect x="37.5%" width="25%" height="100%"/>
-						</svg>
+						<div class="letter-block hTopFull"></div>
+						<div class="letter-block vCenterFull"></div>
 					</div>
 				</div>
 				<div class="pairLetterWrapper">
 					<div class="letter seventh">
-						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="200" height="50"/>
-							<rect y="75%" width="100%" height="25%"/>
-							<rect x="37.5%" width="25%" height="100%"/>
-						</svg>
+						<div class="letter-block hTopFull"></div>
+						<div class="letter-block vCenterFull"></div>
+						<div class="letter-block hBottomFull"></div>
 					</div>
 					<div class="letter eigths">
-                  <svg class="char-svg" viewBox="0 0 200 200" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                     <rect x="25%" y="25%" width="25%" height="25%"/>
-                     <rect width="25%" height="100%" />
-                     <rect x="75%" width="25%" height="100%" />
-                     <rect x="50%" y="50%" width="25%" height="25%" />
-                  </svg>
+						<div class="letter-block vLeftFull"></div>
+						<div class="letter-block vRightFull"></div>
+						<div class="letter-block vNleft"></div>
+						<div class="letter-block vNright"></div>
 					</div>
 				</div>
 			</div>
@@ -83,7 +67,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 $padding-unit: 8px;
+$padding-half: 4px;
 
 body{
    margin:0;
@@ -118,70 +104,57 @@ body{
 }
 
 .letter{
+   position: relative;
    width: 50%;
-   flex-grow: 1;
-   padding: $padding-unit $padding-unit $padding-unit $padding-unit;
-
+   height: 100%;
+   margin-right: $padding-unit;
+   margin-bottom: $padding-unit;
 }
 
-.letter-block
-{
-   position: absolute;
-   background-color: #e10a0a;
+.lettersTop {
+   margin-bottom: $padding-half;
 }
 
-.letter-top{
-   padding-top: 0px;
-}
-
-.letter-bottom{
-   padding-bottom: 0px;
-}
-
-.letter-left{
-   padding-left: 0px;  
-}
-
-.letter-right{
-   padding-right: 0px;  
+.lettersBottom {
+   margin-top: $padding-half;
 }
 
 .first
 {
-   padding-top: 0px;
-   padding-left: 0px;  
+   margin-top: 0px;
+   margin-left: 0px;
 }
 
 .second
 {
-   padding-top: 0px;
+   margin-top: 0px;
 }
 .third
 {
-   padding-top: 0px;
+   margin-top: 0px;
 }
 .fourth
 {
-   padding-top: 0px;
-   padding-right: 0px;  
+   margin-top: 0px;
+   margin-right: 0px;  
 }
 .fifth
 {
-   padding-bottom: 0px;
-   padding-left: 0px;  
+   margin-bottom: 0px;
+   margin-left: 0px;  
 }
 .sixth
 {
-   padding-bottom: 0px;
+   margin-bottom: 0px;
 }
 .seventh
 {
-   padding-bottom: 0px;
+   margin-bottom: 0px;
 }
 .eigths
 {
-   padding-bottom: 0px;
-   padding-right: 0px;  
+   margin-bottom: 0px;
+   margin-right: 0px;  
 }
 
 .char-svg {
@@ -205,54 +178,59 @@ body{
       width: 100%;
       height: 50%;
    }
+
+   .lettersTop {
+      margin-bottom: $padding-unit;
+      box-sizing: border-box;
+   }
+
+   .lettersBottom {
+      margin-top: $padding-unit;
+      box-sizing: border-box;
+   }
+
    .first
    {
-      padding-top: 0px;
-      padding-left: 0px;
-      background-image: url("/assets/letters/C.svg")
+      margin-top: 0px;
+      margin-left: 0px;
    }
 
    .second
    {
-      padding-top: 0px;
-      padding-right: 0px;
-      background-image: url("/assets/letters/E.svg")
+      margin-top: 0px;
+      margin-right: 0px;
    }
    .third
    {
-      padding-top: $padding-unit;
-      padding-left: 0px;
-      background-image: url("/assets/letters/L.svg")
+      margin-top: $padding-unit;
+      margin-left: 0px;
    }
    .fourth
    {
-      padding-top: $padding-unit;
-      padding-right: 0px;  
-      background-image: url("/assets/letters/E.svg")
+      margin-top: $padding-unit;
+      margin-right: 0px;  
    }
    .fifth
    {
-      padding-bottom: $padding-unit;
-      padding-left: 0px;  
-      background-image: url("/assets/letters/S.svg")
+      margin-bottom: $padding-unit;
+      margin-left: 0px;  
    }
    .sixth
    {
-      padding-bottom: $padding-unit;
-      padding-right: 0px;  
-      background-image: url("/assets/letters/T.svg")
+      margin-bottom: $padding-unit;
+      margin-right: 0px;  
    }
    .seventh
    {
-      padding-left: 0px; 
-      padding-bottom: 0px;
-      background-image: url("/assets/letters/I.svg")
+      margin-top: $padding-unit;
+      margin-left: 0px; 
+      margin-bottom: 0px;
    }
    .eigths
    {
-      padding-bottom: 0px;
-      padding-right: 0px;  
-      background-image: url("/assets/letters/N.svg")
+      margin-top: $padding-unit;
+      margin-bottom: 0px;
+      margin-right: 0px;  
    }
 }
 

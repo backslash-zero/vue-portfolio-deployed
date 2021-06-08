@@ -2,10 +2,12 @@
     <div v-if="visible" class="thumbwrapper">
         <img :src="thumbs[index]" class="thumb">
     </div>
-    <div class="wrappermain">
-        <div class="projectwrapper">
-            <div :key="project.id" v-for="project in projects">
-                <PortfolioProject :project="project" @mouseenter="showImg(project.id)" @mouseleave="handleHide()"/>
+    <div class="projectcontainer">
+        <div class="wrappermain">
+            <div class="projectwrapper">
+                <div :key="project.id" v-for="project in projects">
+                    <PortfolioProject :project="project" @mouseenter="showImg(project.id)" @mouseleave="handleHide()"/>
+                </div>
             </div>
         </div>
     </div>
@@ -42,40 +44,38 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.projectcontainer
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding: 80px 0px 80px 0px;
+    box-sizing: border-box;
+}
 .wrappermain
 {
+    position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    width: calc(100% - 40px);
     align-items: center;
     justify-content: center;
+    max-height: 100%;
+    box-sizing: border-box;
 }
+
 .projectwrapper
 {
-    height: 100%;
+    height: auto;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     z-index: 1;
     overflow: auto;
-}
-.thumbwrapper
-{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-.thumb
-{
-    max-width: 50%;
-    max-height: 50%;
-    opacity: 0.75;
 }
 
 </style>
