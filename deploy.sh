@@ -18,8 +18,13 @@ cd dist
 cp index.html 404.html
 echo 'www.celest.in' > CNAME
 
-echo 'dist push:'
-git init
+# echo 'dist push:'
+# git init
+# git remote add origin git@github.com:backslash-zero/vue-portfolio.git
+# git branch -M main
+# git add -A
+# git commit -m 'deploy'
+# git push -u origin main
 git add -A
 git commit -m 'deploy'
 git push -f git@github.com:backslash-zero/backslash-zero.github.io.git main

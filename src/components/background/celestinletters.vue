@@ -4,34 +4,34 @@
 			<div class="doubleLetterWrapper">
 				<div class="pairLetterWrapper">
 					<div class="letter first">
-						<svg class="char-svg" width="200" height="200" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
 							<rect width="25%" height="100%"/>
 							<rect width="100%" height="25%"/>
 							<rect y="75%" width="100%" height="25%"/>
 						</svg>
 					</div>
 					<div class="letter second">
-						<svg class="char-svg" width="200" height="200" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
 							<rect width="25%" height="100%"/>
 							<rect width="100%" height="25%"/>
-							<rect y="75" width="100%" height="25%"/>
-							<rect y="150" width="100%" height="25%"/>
+							<rect y="37.5%" width="100%" height="25%"/>
+							<rect y="75%" width="100%" height="25%"/>
 						</svg>
 					</div>
 				</div>
 				<div class="pairLetterWrapper">
 					<div class="letter third">
-						<svg class="char-svg" width="200" height="200" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="50" height="200"/>
-							<rect y="150" width="200" height="50"/>
+						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="25%" height="100%"/>
+							<rect y="75%" width="100%" height="25%"/>
 						</svg>
 					</div>
 					<div class="letter fourth">
-						<svg class="char-svg" width="200" height="200" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
 							<rect width="25%" height="100%"/>
 							<rect width="100%" height="25%"/>
-							<rect y="75" width="100%" height="25%"/>
-							<rect y="150" width="100%" height="25%"/>
+							<rect y="37.5%" width="100%" height="25%"/>
+							<rect y="75%" width="100%" height="25%"/>
 						</svg>
 					</div>
 				</div>
@@ -39,36 +39,36 @@
 			<div class="doubleLetterWrapper">
 				<div class="pairLetterWrapper">
 					<div class="letter fifth">
-						<svg class="char-svg" width="200" height="200" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect y="150" width="200" height="50"/>
-							<rect y="75" width="200" height="50"/>
-							<rect width="200" height="50"/>
-							<rect width="50" height="125"/>
-							<rect x="150" y="75" width="50" height="125"/>
+						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+							<rect y="75%" width="100%" height="25%"/>
+							<rect y="37.5%" width="100%" height="25%"/>
+							<rect width="100%" height="25%"/>
+							<rect width="25%" height="62.5%"/>
+							<rect x="75%" y="37.5%" width="25%" height="62.5%"/>
 						</svg>
 					</div>
 					<div class="letter sixth">
-						<svg class="char-svg" width="200" height="200" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect width="200" height="50"/>
-							<rect x="75" width="50" height="200"/>
+						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="100%" height="25%"/>
+							<rect x="37.5%" width="25%" height="100%"/>
 						</svg>
 					</div>
 				</div>
 				<div class="pairLetterWrapper">
 					<div class="letter seventh">
-						<svg class="char-svg" width="200" height="200" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+						<svg class="char-svg" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
 							<rect width="200" height="50"/>
-							<rect y="150" width="200" height="50"/>
-							<rect x="75" width="50" height="200"/>
+							<rect y="75%" width="100%" height="25%"/>
+							<rect x="37.5%" width="25%" height="100%"/>
 						</svg>
 					</div>
 					<div class="letter eigths">
-						<svg class="char-svg" width="200" height="200" viewBox="0 0 200 200"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-							<rect x="50" y="50" width="50" height="50"/>
-							<rect width="50" height="200"/>
-							<rect x="150" width="50" height="200"/>
-							<rect x="100" y="100" width="50" height="50"/>
-						</svg>
+                  <svg class="char-svg" viewBox="0 0 200 200" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                     <rect x="25%" y="25%" width="25%" height="25%"/>
+                     <rect width="25%" height="100%" />
+                     <rect x="75%" width="25%" height="100%" />
+                     <rect x="50%" y="50%" width="25%" height="25%" />
+                  </svg>
 					</div>
 				</div>
 			</div>
@@ -121,6 +121,13 @@ body{
    width: 50%;
    flex-grow: 1;
    padding: $padding-unit $padding-unit $padding-unit $padding-unit;
+
+}
+
+.letter-block
+{
+   position: absolute;
+   background-color: #e10a0a;
 }
 
 .letter-top{
@@ -128,7 +135,7 @@ body{
 }
 
 .letter-bottom{
-   padding-bottm: 0px;
+   padding-bottom: 0px;
 }
 
 .letter-left{
@@ -187,6 +194,7 @@ body{
   min-height: 0;
 }
 
+
 @media (max-width: 540px) {
    .doubleLetterWrapper{
       height: 50%;
@@ -200,43 +208,51 @@ body{
    .first
    {
       padding-top: 0px;
-      padding-left: 0px;  
+      padding-left: 0px;
+      background-image: url("/assets/letters/C.svg")
    }
 
    .second
    {
       padding-top: 0px;
       padding-right: 0px;
+      background-image: url("/assets/letters/E.svg")
    }
    .third
    {
       padding-top: $padding-unit;
       padding-left: 0px;
+      background-image: url("/assets/letters/L.svg")
    }
    .fourth
    {
       padding-top: $padding-unit;
       padding-right: 0px;  
+      background-image: url("/assets/letters/E.svg")
    }
    .fifth
    {
       padding-bottom: $padding-unit;
       padding-left: 0px;  
+      background-image: url("/assets/letters/S.svg")
    }
    .sixth
    {
       padding-bottom: $padding-unit;
       padding-right: 0px;  
+      background-image: url("/assets/letters/T.svg")
    }
    .seventh
    {
       padding-left: 0px; 
       padding-bottom: 0px;
+      background-image: url("/assets/letters/I.svg")
    }
    .eigths
    {
       padding-bottom: 0px;
       padding-right: 0px;  
+      background-image: url("/assets/letters/N.svg")
    }
 }
 
