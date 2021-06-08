@@ -43,18 +43,6 @@
                     </div>
                     <div class="photo-wrapper">
                         <div class="photo-box">
-                            <!-- <div class="photo">
-                                <div
-                                    class="image"
-                                    v-for="(image, imageIndex) in filteredPhotos"
-                                    :key="imageIndex"
-                                    @click="index = imageIndex"
-                                    :style="{ backgroundImage: 'url(' + image.src + ')' }"
-                                ></div>
-                            </div> -->
-                            <!-- 
-                            <light-box :media="filteredPhoto" class="photo"></light-box>
-                            -->
 
                             <div v-for="(photo, index) in filteredPhotos" :key="index" class="photo" @click="() => showImg(index)">
                                 <img :src="photo.thumb" :alt="photo.name" class="image"/>
@@ -130,7 +118,6 @@ export default {
         width: 120px;
         height: 120px;
         padding: 8px;
-        margin-bottom: 48px;
         display: flex;
         justify-content: center;
     }
@@ -177,28 +164,29 @@ export default {
     }
 
     .photo-wrapper{
+        display: flex;
         width: 60%;
         overflow: hidden;
         height: 100%;
-    }
-
-    .photo-box{
-        height: 100%;
-        display: flex;
-        max-width: 100%;
+        box-sizing: border-box;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+    .photo-box::before, .photo-box::after{
+        height: 64px;
+        width: 100%;
+        content: "";
+    }
+    .photo-box{
+        height: auto;
+        max-height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         flex-flow: row wrap;
         overflow: auto;
-        padding: 24px 0px 24px 0px;
         box-sizing: border-box;
-    }
-    .photo-box:after
-    {
-        content: "";
-        display: block;
-        height: 80px;
-        width: 100%;
     }
 
     .vel-img-modal, .vel-modal
@@ -253,7 +241,7 @@ export default {
         .project-wrapper
         {
             flex-direction: column;
-            padding: 0px 24px 80px 24px;
+            padding: 0px 16px 80px 16px;
             height: 100%;
             margin-top: 64px;
             margin-bottom: 64px;
@@ -266,28 +254,30 @@ export default {
         }
         .photo-wrapper
         {
-            height: 100%;
             overflow: none;
         }
         .photo-box
         {
-            padding: 0px;
+            width: 100%;
             height: 100%;
             overflow: none;
             justify-content: none;
-            box-sizing: border-box;
-            padding-bottom: 40px;
+            box-sizing: content-box;
+        }
+        .photo-box:before
+        {
+            height: 0px;
         }
         .photo-box:after
         {
-            display: block;
-            position: static;
-            height: 80px;
+            height: 120px;
         }
+
         .photo{
+            width: calc(33% - 16px);
             height: auto;
-            padding: 0px;
-            margin-bottom: 12px;
+            padding: 8px;
+            padding-bottom: 12px;
             display: block;
         }
         img{
